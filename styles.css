@@ -21,6 +21,9 @@ li {
 h3, h4, p {
     font-size: 1.2rem;
 }
+h5 {
+    font-size: 1.2rem;
+}
 h2 {
     font-size: 1.6rem;
 }
@@ -105,7 +108,7 @@ li:hover {
     flex-wrap: wrap;
 }
 .events-container h3 {
-    font-size: 1.7rem;
+    font-size: 1.5rem;
     padding-bottom: 5%;
     text-transform: uppercase;
 }
@@ -129,6 +132,19 @@ li:hover {
 .events {
     background-color: #7EA8BE;
     color: #183240;
+}
+figcaption {
+    margin: 1rem;
+}
+.events figcaption {
+    flex: 1 1 300px;
+}
+.events figure {
+    display: flex;
+    margin: 2% 0;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
 }
 
 
