@@ -11,6 +11,17 @@ body {
     font-family: 'Nunito Sans', sans-serif;
     text-align: center;
 }
+@media only screen and (max-width: 365px) {
+    html {
+        font-size: 14px;
+    }
+}
+@media only screen and (min-width: 1400px) {
+    html {
+        font-size: 18px;
+    }
+}
+
 a {
     text-decoration: none;
     color: #F6F0ED;
@@ -115,10 +126,21 @@ li:hover {
 .meetup, .events {
     display: flex;
     flex-direction: column;
-    flex: 1 1 500px;
+    flex: 1 1 300px;
     align-items: center;
     padding: 4% 5%;
 }
+@media only screen and (max-width: 617px) {
+    .meetup figure {
+        max-width: 75%;
+        justify-content: center;
+        max-height: auto;
+    }
+    .first-event figure img, .second-event figure img {
+        max-width: 80%;
+    }
+}
+
 .meetup {
     background-color: #BBB193;
     color: #1e3d4f;
@@ -138,6 +160,7 @@ figcaption {
 }
 .events figcaption {
     flex: 1 1 300px;
+    justify-content: center;
 }
 .events figure {
     display: flex;
